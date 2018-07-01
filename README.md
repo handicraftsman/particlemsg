@@ -10,6 +10,8 @@ It should not be used for transmitting chunks of data. Use protocols like HTTP f
 
 Every single message is JSON encoded and has `{"Type": ..., "Data": {...}}` form with exactly these field names and exactly this amount of fields.
 
+Messagesare CRLF-separated (\r\n)
+
 Message type is used to indicate purpose of the message while it's data field is used to transmit additional data.
 
 Type field must be string, while data field must be an object.
